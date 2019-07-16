@@ -1,0 +1,136 @@
+Noun = [
+     Throne
+     Cloud
+     lapis lazuli
+     mosaic
+     eye
+     beast
+     stone
+     robe
+     temple
+     ring
+     link
+     serpent
+     performance
+     dream
+     
+]
+
+nounAbstract = [
+ syntax
+ banality
+ commonplaces
+ drabness
+ feebleness
+ solemnity
+ emptiness
+ wrechedness
+ verbosity
+ epithets
+ vocabulary
+ metaphors
+ graces
+ jests
+ harangues
+ style
+ enthusiasm
+ aridity
+ conciseness
+ insinuations
+ humor
+]
+
+Adjective = [
+    Yellow
+    bilious
+    innumerable
+    star-like
+    frozen
+    sacerdotal
+    perforated
+    phosphorescent
+    overheated
+    triumphal
+    meditative
+    lascivious
+ exquisite
+ liberated
+ premeditated
+ rugged
+ nuanced
+ immaculate
+ unutterable
+ simpering
+ wooden
+ infuriating
+ stiff
+ syllabic
+ unchanging
+ pedantic
+ redundant
+ elephantine
+ crude
+ fleshy
+ laconic
+ low
+ roughshod
+ watery
+ larval
+ muscular
+ lurid
+ turgid
+ surprising
+ mysterious
+ gross
+]
+
+Verbwith = [
+ Set with
+ Incrusted with
+ frozen into
+ approached by
+]
+
+verbsObj = [
+  redeems
+  pleases
+  enthralls
+  bores
+  disgusts
+  beguiles
+  admonishes
+]
+
+Simile = [
+  Like <Noun.s>
+  Like <Adjective> <Noun.s> of <Noun.s>
+]
+
+Adjphrase = [
+    at once <Adjective> and <Adjective> in design
+with a <Adjective> <nounAbstract>
+]
+
+Position = [
+    In the center
+    Around this form
+    Beneath
+    In a <Noun>
+    in the <Adjective> atmosphere of <Noun.s>
+]
+
+Phrase = [
+  <Position>, a <Noun> <Verbwith> <Noun.s>.
+  A <Noun> of <Adjective> <Noun.s>, <Simile>.
+  <Adjphrase>, it <verbsObj> as it <verbsObj>.
+  <Simile>, it <verbsObj> <Position>.
+  A <Adjective> and <Adjective> display of <nounAbstract>.
+  It recalls a <Noun>, <Adjphrase>, <Simile>.
+  It recalls a <Noun>, <Adjphrase>.
+  Does it represent <nounAbstract>?
+  Never before has <nounAbstract> attained such <nounAbstract>.
+  Never before has the <Adjective> of <nounAbstract> been able to force <Adjective> <Noun.s> into such <nounAbstract>, <Adjphrase>.
+  These <Adjective> and <Adjective> <nounAbstract.s> posess a <Adjective> <nounAbstract>.
+]
+
+start = <Phrase> <Phrase> <Phrase>
