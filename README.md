@@ -1,10 +1,18 @@
 # Filigree Playground
 
+A small webserver that generates Filigree text (on the server side).
+
+Run it on Glitch:
+https://glitch.com/edit/#!/filigree-playground
+
+Example page it makes:
+https://filigree-playground.glitch.me
+
+# Glitch instructions
 
 ## To see results
 
 If you don't see the output pane with results, click the "Show" sunglasses button in the top left and choose "Next to the code".
-
 
 ## To work on files
 
