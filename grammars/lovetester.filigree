@@ -1,0 +1,149 @@
+
+#---------------
+# level 1
+wet = [
+ damp
+ wet
+ watery
+ limp
+ moist
+ deflated
+ soggy
+ sagging
+ mild
+ clammy
+ harmless
+ cinnamon
+ dreamy
+ tepid
+ lukewarm
+ soft
+ snoozy
+]
+blanket = [
+ blanket
+ cupcake
+ noodle
+ slice of bread
+ balloon
+ pillowcase
+ towel
+ custard
+ parfait
+ roll
+ neighbor
+ puff
+ cheerio
+ puppy
+]
+lump = [
+ lump
+ pile
+ collection
+ conglomeration
+ concretion
+ puddle
+]
+
+#---------------
+# level 2
+hot = [
+ hot
+ flaming
+ scorching
+ steamy
+ spicy
+ burning
+ naughty
+ winking
+ fruity
+ exquisite
+ liberated
+ crunchy
+ sassy
+ flirty
+ main
+]
+
+biscuit = [
+ biscuit
+ sandwich
+ stuff
+ thing
+ buddy
+ pal
+ friend
+ wiggler
+ companion
+ bandito
+ snack
+ dalliance
+ fling
+ radish
+ strawberry
+ mango
+ birthday candle
+ snuggler
+ nuzzler
+ squeeze
+ bird
+ babe
+ crush
+]
+
+idiom = [
+  hubba hubba
+  double take 
+  head over heels
+]
+	
+
+#---------------
+# level 3
+raging = [
+ raging
+ passionate
+ sexy
+ ultimate
+ wild
+ sex
+ legendary
+ treasured
+ uncontainable
+ level 8
+ rampaging
+ big time
+ master
+ expert
+ mega
+ mighty
+]
+stallion = [
+ stallion
+ unicorn
+ weasel
+ centaur
+ sphynx
+ siren
+ bigfoot
+ smoochmaster
+ jalapeno
+ magnet
+]
+
+# -------------------------
+# putting it all together
+level3 = [
+ <raging> <stallion>
+ <raging> <raging> <stallion>
+]
+level2 = [
+ <hot> <biscuit>
+ <idiom>
+]
+level1 = [
+ <wet> <blanket>
+ <wet> <lump> of <blanket>
+]
+countdown = Love Tester\n\n3. <level3>\n2. <level2>\n1. <level1>
+start = <countdown.titlecase>
