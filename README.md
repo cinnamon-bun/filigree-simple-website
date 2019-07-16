@@ -8,6 +8,9 @@ https://glitch.com/edit/#!/filigree-playground
 Example page it makes:
 https://filigree-playground.glitch.me
 
+This code is also on GitHub:
+https://github.com/cinnamon-bun/filigree-simple-website
+
 # Glitch instructions
 
 ## To see results
