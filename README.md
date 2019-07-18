@@ -1,15 +1,18 @@
 # Filigree Playground
 
-A small webserver that generates Filigree text (on the server side).
+A small webserver that generates text using Filigree (on the server side).
 
 Run it on Glitch:
-https://glitch.com/edit/#!/filigree-playground
+[https://glitch.com/edit/#!/filigree-playground](https://glitch.com/edit/#!/filigree-playground)
 
-Example page it makes:
-https://filigree-playground.glitch.me
+View the example page it makes:
+[https://filigree-playground.glitch.me](https://filigree-playground.glitch.me)
 
 This code is also on GitHub:
-https://github.com/cinnamon-bun/filigree-simple-website
+[https://github.com/cinnamon-bun/filigree-simple-website](https://github.com/cinnamon-bun/filigree-simple-website)
+
+Filigree itself, and its documentation, is here:
+[https://github.com/cinnamon-bun/filigree](https://github.com/cinnamon-bun/filigree)
 
 # Glitch instructions
 

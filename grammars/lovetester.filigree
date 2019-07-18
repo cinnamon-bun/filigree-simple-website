@@ -19,6 +19,16 @@ wet = [
  lukewarm
  soft
  snoozy
+ mushy
+ apathetic
+ gentle
+ naive
+ simple
+ fluffy
+ delicate
+ malleable
+ downy
+ tender
 ]
 blanket = [
  blanket
@@ -35,6 +45,8 @@ blanket = [
  puff
  cheerio
  puppy
+ flower
+ gelatin
 ]
 lump = [
  lump
@@ -43,6 +55,12 @@ lump = [
  conglomeration
  concretion
  puddle
+]
+idiom1 = [
+ Marlin Blando
+ perfect angel boop
+ Don't ask
+ Nah
 ]
 
 #---------------
@@ -63,6 +81,9 @@ hot = [
  sassy
  flirty
  main
+ breathtaking
+ charming
+ dashing
 ]
 
 biscuit = [
@@ -89,12 +110,17 @@ biscuit = [
  bird
  babe
  crush
+ princess
+ prince
+ duchess
+ baron
 ]
 
-idiom = [
+idiom2 = [
   hubba hubba
   double take 
   head over heels
+  call me
 ]
 	
 
@@ -117,6 +143,7 @@ raging = [
  expert
  mega
  mighty
+ juicy
 ]
 stallion = [
  stallion
@@ -130,20 +157,67 @@ stallion = [
  jalapeno
  magnet
 ]
+hunka = [
+ hunka hunka
+ piece of
+ tower of
+ pile of
+ stack of
+ mountain of
+ chunk of
+ bundle of
+]
+true = [
+ true
+ serious
+ real
+ absolute
+ authentic
+ genuine
+ bona fide
+ natural
+ perfect
+ expert
+]
+burning = [
+ burning
+ raging
+ smoldering
+ simmering
+ boiling
+ hot
+ juicy
+ scorching
+ sizzling
+ sweltering
+ steaming
+ feverish
+ passionate
+]
+idiom3 = [
+ a non-problematic Casanova
+ unprecedented level of sass!
+]
+
 
 # -------------------------
 # putting it all together
 level3 = [
  <raging> <stallion>
  <raging> <raging> <stallion>
+ <hunka> <burning> <stallion>
+ <true> <hunka> <burning> <stallion>
+ <idiom3>
 ]
 level2 = [
  <hot> <biscuit>
- <idiom>
+ <idiom2>
 ]
 level1 = [
  <wet> <blanket>
+ <true> <wet> <blanket>
  <wet> <lump> of <blanket>
+ <idiom1>
 ]
-countdown = Love Tester\n\n3. <level3>\n2. <level2>\n1. <level1>
+countdown = 😍Love Tester😍\n\n5. <level3>\n4. <level2>\n3. <level2>\n2. <level1>\n1. <level1>
 start = <countdown.titlecase>

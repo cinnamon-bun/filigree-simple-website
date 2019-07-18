@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "filigree-text": "0.0.18"
+    "filigree-text": "0.0.20"
   },
   "engines": {
     "node": "8.x"
