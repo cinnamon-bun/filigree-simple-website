@@ -38,3 +38,7 @@ You can change the visual styles in `public/style.css`
 
 Errors in Filigree files will show up in the output pane on the right.
 Errors in the Javascript go into the Log pane at the bottom left (inside the Tools button)
+
+# Screenshot
+
+![](https://cdn.glitch.com/f3eb69a5-63dc-439c-bcd5-8d7344895c87%2Fscreenshot.png?v=1563411802823)
