@@ -2,9 +2,10 @@
 
 
 
-// choose which grammar to use
+// choose which grammar file to use
 
 let FILENAME = 'lovetester';
+//let FILENAME = 'wizardSchool';
 //let FILENAME = 'bookreview';
 //let FILENAME = 'artreview';
 let N = 5;
