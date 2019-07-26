@@ -34,8 +34,11 @@ let generate = (fil) => {
   }
   // generate text
   let text = fil.generate('start');
-  // convert "\n" strings into html linebreaks
-  text = text.split('\\n').join('<br>');
+  // sanitize angle-brackets so they don't count as HTML on the page
+  // this helps errors show up
+  text = text.split('<').join('&lt');
+  // convert newlines to HTML linebreaks
+  text = text.split('\n').join('<br/>');
   return text;
 }
 
