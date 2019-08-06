@@ -6,6 +6,8 @@
 }
 
 body {
+  line-height: 1.3em;
+  font-size: 17px;
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 25px;
   /* yellow-green gradient */
@@ -21,9 +23,65 @@ body {
   font-size: 18px;
   line-height: 1.5em;
   font-family: "georgia";
+  white-space: pre-line;
 }
 
 .error {
   font-weight: bold;
   color: #800;
+}
+
+.container {
+  padding: 4px;
+  margin: 2px;
+  display:inline-block;
+  white-space: normal;
+  //border: 1px solid #9bf;
+  //border: 1px solid rgba(0,0,0, 0.15);
+  //border-bottom: 2px solid rgba(0,0,0,0.4);
+  border-radius: 8px;
+  //background: rgba(64, 200, 255, 0.03);
+  background: rgba(64, 200, 255, 0.25);
+}
+
+/* a silly way to make alternating colors the deeper the nesting goes */
+.container .container {
+  background: white;
+}
+.container .container .container {
+  background: rgba(0, 200, 100, 0.25);
+}
+.container .container .container .container {
+  background: white;
+}
+.container .container .container .container .container {
+  background: rgba(64, 200, 255, 0.25);
+}
+.container .container .container .container .container .container {
+  background: white;
+}
+.container .container .container .container .container .container .container {
+  background: rgba(0, 200, 100, 0.25);
+}
+.container .container .container .container .container .container .container .container {
+  background: white;
+}
+.container .container .container .container .container .container .container .container .container {
+  background: rgba(64, 200, 255, 0.25);
+}
+.container .container .container .container .container .container .container .container .container .container {
+  background: white;
+}
+
+
+.ruleName {
+  color: #08f;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 1em;
+}
+/* this is used on the actual output text, but only when show-structure is on */
+.output {
+  white-space: pre-line;
+  line-height: 1em;
 }
