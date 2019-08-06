@@ -1,13 +1,15 @@
+let capFirst = (s) =>
+    s[0].toUpperCase() + s.slice(1);
 //=================================================================
 // SETTINGS
 
 // choose which grammar file to use
 
-//let FILENAME = 'insults';
-//let FILENAME = 'wizardSchool';
+let FILENAME = 'insults';
+//let FILENAME = 'wizardschool';
 //let FILENAME = 'bookreview';
 //let FILENAME = 'artreview';
-let FILENAME = 'lovetester';
+//let FILENAME = 'lovetester';
 
 // how many messages to generate
 let N = 50;
@@ -18,6 +20,9 @@ let RANDOM_SEED = 'abc';
 
 // draw boxes around the rule structure?
 let SHOW_STRUCTURE = false;
+
+// title to show at the top of the page
+let TITLE = capFirst(FILENAME);
 
 
 
@@ -39,14 +44,13 @@ let loadFil = () => {
 
 // declare a couple of wrapper functions to use, depending on whather we want to show the structure
 
-// in this default version we neuter the angle brackets so we can see unreplaced rules in the output
-// and replace newlines with HTML linebreaks
+// in this default version we neuter the angle brackets so we can see unreplaced rules in the output,
+// otherwise they would be treated as actual HTML tags and hidden by the browser
 let doNotWrapperFn = (rule, text) =>
   text
   .split('<').join('&lt');
 
-// in this fancier wrapper function, we show the rule name in a box
-// we depend on CSS to handle newlines for us.
+// in this fancier wrapper function, we show the rule name in a box.
 // but we can't show leftover unmatched <rules> in the output because we can't
 // mess with their angle brackets without breaking the real HTML we're adding here.
 let fancyWrapperFn = (rule, text) =>
@@ -61,14 +65,12 @@ let generateOneMessage = (fil) => {
     // report error message
     return '<div class="error">' + fil.err.message.split('<').join('&lt;') + '</div>';
   }
-  
   // generate text
   let text = fil.generate('start', SHOW_STRUCTURE ? fancyWrapperFn : doNotWrapperFn);
-    
   return text;
 }
 
-// init webserver
+// create webserver
 const express = require('express');
 const app = express();
 app.use(express.static('public'));
@@ -83,7 +85,10 @@ app.get('/', function(request, response) {
   }
   
   // put them each in divs for css styling
-  let text = texts.map(t => '<div class="filigree">' + t + '</div>').join('\n');
+  let text = texts.map(t => '<div class="filigreeMessage">' + t + '</div>').join('\n');
+
+  // add the title above the messages
+  text = '<div class="title">' + TITLE + '</div>\n' + text;
   
   // load html template from file
   let template = fs.readFileSync('views/index.html', 'utf-8');
