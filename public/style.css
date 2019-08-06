@@ -8,13 +8,25 @@
 body {
   line-height: 1.3em;
   font-size: 17px;
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: "georgia", serif;
   margin: 25px;
   /* yellow-green gradient */
   background: linear-gradient(-45deg, #26a5bf 0%,#b3f7aa 100%) repeat fixed;
 }
 
-.filigree {
+.pageColumn {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 28px; 
+  line-height: 2em;
+}
+
+.filigreeMessage {
   /* white box, rounded corners */
   background: #fff;
   border-radius: 10px;
@@ -22,7 +34,6 @@ body {
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 1.5em;
-  font-family: "georgia";
   white-space: pre-line;
 }
 
