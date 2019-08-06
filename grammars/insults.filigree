@@ -1,0 +1,250 @@
+nounAbstract = [
+ # singular, abstract nouns
+ syntax
+ banality
+ drabness
+ feebleness
+ solemnity
+ emptiness
+ wrechedness
+ verbosity
+ vocabulary
+ style
+ enthusiasm
+ aridity
+ conciseness
+ insinuation
+ humor
+ behavior
+]
+
+tiny = [
+ tiny
+ small
+ little
+ insignificant
+ pitiful
+ pathetic
+]
+
+nounBody = [
+ nose
+ body
+ bug body
+ paw
+ tail
+ butt
+ face
+ fur
+ visage
+]
+
+nounNonBody = [
+ # concrete things you might insult about someone
+ house
+ fashion
+ outfit
+ hat
+ leaf
+]
+
+nounConcrete = [
+ <nounBody>
+ <nounBody>
+ <tiny> <nounBody>
+ <nounNonBody>
+]
+
+adjective = [
+ yellow
+ bilious
+ frozen
+ perforated
+ overheated
+ lascivious
+ rugged
+ unutterable
+ simpering
+ wooden
+ infuriating
+ stiff
+ unchanging
+ pedantic
+ redundant
+ elephantine
+ crude
+ fleshy
+ laconic
+ low
+ roughshod
+ watery
+ larval
+ muscular
+ lurid
+ turgid
+ surprising
+ mysterious
+ gross
+]
+
+dislikeOBJ = [
+ hate
+ reject
+ don't like
+ refuse to think about
+ dislike
+ dispise
+ detest
+ loathe
+ scorn
+ shun
+ can never approve of
+]
+
+reactTo = [
+ shudder in horror
+ recoil in disgust
+ frown with displeasure
+ feel suspicious
+ throw up a little
+ grow bored
+ experience dismay
+ become annoyed
+ convulse with nausea
+]
+
+verber = [
+ licker
+ jumper
+ muncher
+ wombler
+ sniffer
+ noodler
+ mumbler
+ bender
+ counter
+ guzzler
+]
+
+
+# -------------------------
+# putting it all together
+
+yourNounPhrase = [
+ your <nounAbstract>
+ your <nounConcrete>
+ your <adjective> <nounAbstract>
+ your <adjective> <nounConcrete>
+]
+
+
+#=========================
+# smells
+
+smellsLike = [
+ smells like
+ has the distinct odor of
+ emits the air of
+ reminds one of
+ resembles
+ brings to mind
+]
+
+fruit = [apple/banana/cherry/peach/orange/tangerine/plum/watermelon]
+rotten = [rotten/decaying/moldy/slimy]
+swamp = [swamp/bog/puddle]
+flower = [flower/rose/daisy/dandelion/tulip]
+
+grossNoun = [
+  <rotten> <fruit>
+  <swamp>
+  <flower> well past its prime
+]
+
+onTopOf = [
+ on top of
+ on
+ piled upon
+ leaning on
+ laying beneath
+ stuffed inside
+]
+
+onAHotDay = [
+ on a [hot/sticky/damp/humid/warm] [day/afternoon]
+ [marinating/melting/roasting/simmering] in the sun
+]
+
+grossNounPhrase = [
+ <adjective> <grossNoun>
+ <grossNoun>
+ <grossNoun> <onTopOf> <grossNoun.a>
+ <grossNoun> <onAHotDay>
+]
+
+youSmell = [
+ your <nounConcrete> <smellsLike> <grossNounPhrase.a>
+ your <nounConcrete> <smellsLike> <grossNounPhrase.a>
+ you're a <swamp>-<verber>
+]
+
+#=====================================
+
+yourFate = [
+ go jump into a <grossNoun>
+ fall into a <grossNoun>
+ trip on a <grossNoun>
+ eat a <grossNounPhrase>
+]
+
+#=====================================
+# final list of insults
+
+insult = [
+ never before has <nounAbstract> attained such <nounAbstract>
+ I <reactTo> when I think of <yourNounPhrase>
+ I <dislikeOBJ> <yourNounPhrase>
+ <yourNounPhrase> is <adjective> and <adjective>
+ you're such <adjective.a> <nounConcrete><verber>
+ <youSmell>
+ <youSmell>
+ <youSmell>
+ why don't you <yourFate>
+ I hope you <yourFate>
+ you should <yourFate>, you <nounConcrete><verber>
+]
+
+tidbit = [
+ tidbit
+ snaggletooth
+ wiggler
+ munchkin
+ buddy
+]
+
+myDear = [
+ # condescending affection
+ dear
+ dear one
+ little one
+ dearie
+ my darling
+ you adorable little <tidbit>
+]
+
+myDearInsult = <myDear>, <Insult>
+doubleInsult = [
+ <insult.sentencecase>.
+ <insult.sentencecase>.
+ <insult.sentencecase>, <myDear>.
+ <myDear.sentencecase>, <insult>.
+ <insult.sentencecase>.  Furthermore, <insult>.
+ <insult.sentencecase>.  And I daren't mention it, but <insult>.
+ <insult.sentencecase>.  And another thing: <insult>.
+ <insult.sentencecase>.  But that hardly matters because... well, <insult>.
+ <insult.sentencecase>.  Not only that, but <insult>.
+ I hesitate to [admit it/say this][, <myDear>,/] but: <insult>.
+ It wouldn't be [polite/proper] to tell you that <insult>. But that's not gonna stop me.
+]
+
+start = <doubleInsult>
