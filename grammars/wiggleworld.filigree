@@ -1,0 +1,446 @@
+
+start = <tweet>
+
+#================================================================================
+# NAMES
+
+twitterName = <twitterNamePhrase.titlecase>
+twitterNamePhrase = [
+    a <twitterNameAdj> <twitterNameNoun>
+    <twitterNameAdj> lil <twitterNameNoun>
+    yer <twitterNameNoun>
+    <twitterNameAdj>
+]
+twitterNameAdj = [<flavor>/<size>/<mood>]
+twitterNameNoun = [<flavor>/<smallNoun>/<foodItem>]
+emoji = [🐝/🐌/🐞/🐛/🐜/🌱/🌿/🍀/🍃/🍂/🍁/🌺/🌹/🌻/🌸/🍄/💖/❤️/💜/💕/⭐️/✨/🌛/🌙/☀️/⚡️/💦/🍑/🍆/🍎/🍐/🍊/🍌/🍓/🍉/🍒]
+
+#================================================================================
+# TWEETS
+
+tweet = <sentences><period>[/// <emoji>]
+sentences = [
+    <smalltalk>
+    <smalltalk>
+    <prefix> <smalltalk>
+    <smalltalk><and><smalltalkOrInterjection>
+    <smalltalkOrInterjection><and><smalltalk>
+    <smalltalk>.  [<prefix> /]<smalltalk>.  <smalltalkOrInterjection>
+]
+smalltalkOrInterjection = [
+    <smalltalk>
+    <smalltalk>
+    <interjection>
+]
+# These should be complete sentences, starting with lowercase,
+# with no ending punctuation.
+smalltalk = [
+    that's the last time I go to the <place>
+    the <place> is my favorite
+    what a <_temp> <_precip> <_time>
+    on a <_precip> <_time> like this I like to <activity>
+    it's time to <activity>
+    it's time to <activity> and have a <snack>
+    it's so <_temp>
+    I <love> this <_temp> <_precip> weather
+    a <_temp> <_precip> <_time> like this makes me <veryMood>
+    this looks like a good <_time> for a <snack>
+    great <_time> for a <snack>
+    I'm <veryMood> <_today>
+    this [<season> /]weather makes me <veryMood>
+    I'm going to the <place> <_today>
+    did you see the <place> lately
+    it's too <_temp> for me
+    I've been <veryMood> all <_time>
+    I'm <veryMood>
+    are you gonna give me a <snack> or what
+    gonna think about a <snack>
+    I need a <snack> because I'm <veryMood>
+    <_temp> <_time.s> make me <veryMood>
+    nobody understands me
+    I <love> my friends
+    it was so nice to see everyone
+    it was so nice to see everyone at the <event>
+    gonna get real <veryMood>
+    give me every <snack>
+    the <place> made me <veryMood>
+    I had a <veryMood> time at the <place>
+    I'm <veryMood> about the <place>
+    I can't stop thinking about a <snack>
+    I had a <snack> <_today>
+    <_precip> again huh
+    it's a good [<_temp> /]<_time> to get some <_light>
+    I <love> the feeling of <_light> on my bug body
+    TFW you can't finish your <snack> because you're too small
+    <season> always reminds me of the <event>
+    so how about that <championship> [today/yesterday/last night]
+    I'm heading out to <town> for the weekend
+    <town> is seriously [the best/the prettiest/my favorite] place[ ever/]
+    hooray for the <sportsTeam>
+    hooray for the <sportsTeam>, winners of the <championship>
+]
+interjection = [
+    dude
+    amirite
+    ugh
+    yeahhhh
+    screw this
+    idk
+    hahaha
+    wtf
+    sheeeit
+    that's life
+    dang
+    ok
+    I dunno
+    yesss
+    gosh
+    yepppppppp
+    LOL
+]
+prefix = [
+    hot take:
+    pro tip:
+    life hack:
+    spoiler alert:
+    so:
+    hey:
+    hey so:
+    ok look:
+    did u kno:
+    people:
+    opinion:
+    I forgot to mention that
+    um:
+    not sure how to say this but
+    wasn't gonna say anything but
+    (raises hand)
+    (shouts)
+    (whispers)
+    (psst)
+    excuse me but
+    guess what. 
+    dear friends,
+    I gotta say,
+    👀
+]
+
+#================================================================================
+# PUNCTUATION
+
+and = [.  /.  /.  /-- /... / and /!  /!?  /??  / but / but / & /.  also /.  and / because ]
+period = [./././//!/!?/??]
+
+#================================================================================
+# GENERAL SYNONYMS
+
+love = [love/like/appreciate/enjoy]
+activity = [snooze/rest/go outside/look at the sky/daydream/stretch/make some wishes/gaze into the distance/make [<size> /]plans]
+
+#================================================================================
+# PLACES
+
+# a place or event you can go to
+place = [
+    <shop>
+    <noun> <shop>
+    <bigNoun>
+    <size> <bigNoun>
+    <event>
+    <event>
+    <event>
+]
+event = [
+    <festival>
+    <festival>
+    <championship>
+]
+festival = [
+    <season> <gathering>
+    <noun> <gathering>
+]
+size = [big/little/small/lil/tiny]
+shop = [shop/gym/store/doctor/market/cafe/library]
+gathering = [picnic/party/festival/fair/ball/dance/potluck/gathering]
+
+#================================================================================
+# FOREST NOUNS AND PLACES
+
+noun = [<smallNoun>/<bigNoun>]
+smallNoun = [
+    <fruit>
+    <veg>
+    <flower>
+    <otherFlavor>
+]
+# a bigNoun is more like a place
+bigNoun = [
+    rock
+    boulder
+    [<north>/] garden
+    [<north>/] creek
+    flower
+    [<flower>/] bush
+    bramble
+    [hollow/] log
+    meadow
+    <treeType>
+    tree
+    <treeType> stump
+    [mossy /granite ///]boulder
+    [reflecting /murky /commemorative ///]puddle
+]
+
+north = [
+    north
+    east
+    south
+    west
+]
+
+treeType = [
+    oak
+    redwood
+    pine
+]
+
+#================================================================================
+# MOODS
+
+veryMood = [
+    <mood>
+    <mood>
+    <mood>
+    <mood>
+    <mood>
+    <very> <mood>
+    <very> <mood>
+    <very> <very> <mood>
+]
+very = [really/super/so/very/extra]
+mood = [nostalgic/happy/tired/chill/nervous/excited/hungry/gay/peaceful/calm]
+
+#================================================================================
+# FOOD
+
+snack = [
+    <cup> of [<flavor> /]<beverage>
+    [<size> /][<flavor> /]<foodItem>
+    [<size> /][<flavor> /]<foodItem>
+]
+foodItem = [
+    <specificFoodItem>
+    <specificFoodItem>
+    <genericFoodItem>
+]
+cup = [cup/cup/bowl]
+beverage = [tea/coffee/juice/water/soup]
+genericFoodItem = [nibble/snack/snackie/bite/dinner]
+specificFoodItem = [<sweetFood>/<savoryFood>]
+sweetFood = [
+    bagel
+    biscuit
+    bun
+    cake
+    cookie
+    croissant
+    custard
+    donut
+    dumpling
+    milkshake
+    muffin
+    pastry
+    pie
+    pretzel
+    pudding
+    scone
+    strudel
+    tart
+]
+savoryFood = [
+    burger
+    burrito
+    casserole
+    curry
+    dumpling
+    pizza
+    salad
+    sandwich
+]
+flavor = [
+    <fruit>
+    <veg>
+    <spice>
+    <flower>
+    <otherFlavor>
+]
+fruit = [blueberry/strawberry/peach/raspberry/apple/grape/banana/cherry/berry/pineapple]
+veg = [broccoli/chard/kale/cucumber/squash/pumpkin/cucumber/tomato/bean/pea/carrot]
+spice = [cinnamon/clove/mint/sugar/honey/sap/nectar/chocolate]
+flower = [rose/chamomile/hibiscus/lavender/catkin/daisy/nasturtium/pansy/violet]
+otherFlavor = [bark/twig/spore/petal/pollen/leaf/dewdrop/dirt/pebble/pinecone/mushroom]
+
+#================================================================================
+# SCENARIOS
+# these scenario-related rules should be baked to variables but Filigree doesn't have that feature yet
+
+_temp = [hot/warm/pleasant/cold/freezing]
+_precip = [clear/damp/rainy/foggy/cloudy/crisp]
+_time = [morning/day/afternoon/evening/night]
+_today = [this morning/today/this afternoon/this evening/tonight]
+_light = [sunlight/moonlight/starlight]
+
+tomorrow = [
+    tomorrow
+    next week
+    tonight
+    today
+    later
+    soon
+    this weekend
+    on <weekday>
+    on <weekday>
+]
+weekday = [Monday/Tuesday/Wednesday/Thursday/Friday/Saturday/Sunday]
+
+#================================================================================
+#================================================================================
+#================================================================================
+#================================================================================
+#================================================================================
+#================================================================================
+
+headline = [
+    New <smallNoun> discovered!
+    The town of <town> announces a new center for the munching of berries
+    The <festival> is <tomorrow>
+    Tomorrow's <festival> is sure to be a fun time for all
+    Mysterious hole in the ground turns out to be miss moss' house
+    <species.s.sentencecase> return from their <season> migration. Welcome back friends! 
+    The <season> migration will be starting soon. Safe travels to the <species.s> who are traveling this year! 
+    Local caterpillar reminds everyone that she especially likes <smallNoun.s>
+    The latest art installation from the wood boring beetles has become a town favorite
+    Next week, <bugName> will be hosting a craft night on the <bigNoun>. All ages! 
+    Be careful when crawling by the <bigNoun>. Don't wake up our hibernating pals! 
+    The ninth annual gathering of <species.s.titlecase> for Science will take place <tomorrow>
+    Small <species> achieves lifelong dream\nThis little aphid wanted nothing more than the juiciest nasturtium on the vine and today they got it!
+    Inside the wild world of <smallNoun.s>
+    The soothing history of the <bigNoun>
+    How to keep your shell shiny: Fernie's tips!
+    This week's hiveoscope: You will enjoy a sunbeam, peacefully. 
+    <smallNoun.s.sentencecase> from the inside out: a weevils' perspective
+    This afternoon's sunbeam is expected to be well-attended by flying bugs
+    Moist conditions continue underneath most of the area's rocks. Consider visiting one of <town>'s mossiest shelters soon! 
+    Sunset forecast: <sunsetColor>, <sunsetColor>, and <sunsetColor>.
+    Flowers are expected to close their petals tonight at around 7 pm! 
+    The <sportsTeam> will play the <sportsTeam> <tomorrow>. Who will win?
+    The <sportsTeam> are the favorite to win this year's <championship>.
+    Everybody wins <championship>! Congratulations everyone, we all deserve it!
+    Our suggestions for the best way to enjoy a <smallNoun>.
+    Class [1/2/3] raindrops expected <tomorrow>. Stay safe under a <smallNoun>!
+    How to get along with everybuggy.
+    How <species.s> do their thing.
+]
+
+town = [
+    Thistle
+    Stumptown
+    Brambleton
+    Mossland
+    Stick City
+    New South Leaf
+    West Petal
+    East Bark
+    North Burrow
+    Berryhaven
+    Mushroomfield
+    Lichenfield
+    Daisyridge
+    Dandelion City
+    Puddle Cove
+    Dewdrop Bay
+    Seed Hollow
+    Acornfield
+    Twigland
+    Stump Canyon
+]
+
+season = [autumn/spring/summer/winter]
+
+bugName = [
+    Miss Fernbug
+    Fernie
+    Berrydoop
+]
+
+species = [
+    ant
+    bee
+    beetle
+    centipede
+    earwig
+    flea
+    fly
+    grasshopper
+    grub
+    katydid
+    ladybug
+    millipede
+    pillbug
+    slug
+    snail
+    worm
+]
+
+sunsetColor = [
+    salmon pink
+    powder grey
+    cobalt
+    chartreuse
+    indigo
+    firebrick red
+    misty blue
+    electric purple
+    a purple as deep as your heart
+    flecked with stars
+    misty
+    gold
+    significant
+    dandelion yellow
+    banana yellow
+    still
+    vast
+]
+
+# To be used like "The <sportsTeam>"
+sportsTeam = <sportsTeam2.titlecase>
+sportsTeam2 = [
+    <town> Wigglers
+    <town> Crawlers
+    Hoppers of <town>
+    <town> Manylegs
+    Slimers
+    Segmented Sizzlers
+    Very Brave <species.s> of <town>
+    <smallNoun> Munchers
+]
+
+championship = [
+    World Championship
+    <smallNoun.titlecase> Cup
+    <town.titlecase> Derby
+    <smallNoun.titlecase> World Series
+    <smallNoun> eating contest
+    hiding under a <bigNoun> competition
+    <smallNoun> race
+    <bigNoun.titlecase> Marathon
+]
+
+
+
+
+
+ 
+
+
+

@@ -1,9 +1,36 @@
-adjective = [haunted/spooky/mysterious/dark/old]
-institute = [institute/school/college]
-subject = [wizardry/magic/spells/potions]
+# This is a list of text replacement rules
+# like fancy mad-libs.
+
+# <anglebrackets> refer to another rule.
+# [squarebrackets] randomly choose from what's inside them.
+
+start = ✨ Welcome to the <schoolName.titlecase>!  Don't [trip on/fall into/step on] the <spookyPlace>.
+
 schoolName = [
-    [The/] <adjective> <institute> of <subject>
-    [The/] <institute> of <adjective> <subject>
-    The <adjective> <subject> <institute>
+  <haunted> <institute> of <subject>
+  <institute> of <haunted> <subject>
+  <haunted> <subject> <institute>
+  <haunted> <haunted> <haunted> <institute>
 ]
-start = Welcome to the <schoolName.titlecase>
+haunted = [
+  haunted
+  spooky
+  mysterious
+  dark
+  old
+  ancient
+]
+institute = [institute/school/college/academy]
+subject = [wizardry/magic/spells/potions]
+
+spookyPlace = <container> of <horrors>
+
+container = [vat/cauldron/pit/vial/chamber/dimension]
+horrors = [
+  bones ☠️
+  snakes 🐍
+  bubbling goo
+  newts
+  eyeballs 👀
+  bats 
+]

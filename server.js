@@ -5,11 +5,14 @@ let capFirst = (s) =>
 
 // choose which grammar file to use
 
-let FILENAME = 'insults';
-//let FILENAME = 'wizardschool';
-//let FILENAME = 'bookreview';
 //let FILENAME = 'artreview';
+//let FILENAME = 'bookreview';
+//let FILENAME = 'headlines';
+//let FILENAME = 'insults';
 //let FILENAME = 'lovetester';
+let FILENAME = 'wiggleworld';
+//let FILENAME = 'wizardschool';
+
 
 // how many messages to generate
 let N = 50;
