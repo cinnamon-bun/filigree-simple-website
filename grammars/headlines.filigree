@@ -1,0 +1,153 @@
+start = <headline>
+
+headline = [
+New <smallnoun> discovered!
+The town of <town> announces a new center for the munching of berries
+The <festival> is <tomorrow>
+Tomorrow's <festival> is sure to be a fun time for all
+Mysterious hole in the ground turns out to be miss moss' house
+<species.s.sentencecase> return from their <season> migration. Welcome back friends! 
+The <season> migration will be starting soon. Safe travels to the <species.s> who are traveling this year! 
+Local caterpillar reminds everyone that she especially likes <smallnoun.s>
+The latest art installation from the wood boring beetles has become a town favorite
+Next week, <bugname> will be hosting a craft night on the <largenoun>. All ages! 
+Be careful when crawling by the <largenoun>. Don't wake up our hibernating pals! 
+The ninth annual gathering of <species.s.titlecase> for Science will take place <tomorrow>
+Small <species> achieves lifelong dream\nThis little aphid wanted nothing more than the juiciest nasturtium on the vine and today they got it!
+Inside the wild world of <smallnoun.s>
+The soothing history of the <largenoun>
+How to keep your shell shiny: Fernie's tips!
+This week's hiveoscope: You will enjoy a sunbeam, peacefully. 
+<smallnoun.s.sentencecase> from the inside out: a weevils' perspective
+This afternoon's sunbeam is expected to be well-attended by flying bugs
+Moist conditions continue underneath most of the area's rocks. Consider visiting one of <town>'s mossiest shelters soon! 
+Sunset forecast: <color>, <color>, and <color>.
+Flowers are expected to close their petals <tomorrow> at around 7 pm! 
+The <sportsteam> will play the <sportsteam> <tomorrow>. Who will win?
+The <sportsteam> are the favorite to win this year's <championship>.
+Everybody wins <championship>! Congratulations everyone, we all deserve it!
+Our suggestions for the best way to enjoy a <smallnoun>.
+Class [1/2/3] raindrops expected <tomorrow>. Stay safe under a <smallnoun>!
+How to get along with everybuggy.
+How <species.s> do their thing.
+]
+
+town = [
+Thistle
+Stumptown
+Brambleton
+Mossland
+Stick City
+New South Leaf
+West Petal
+East Bark
+North Burrow
+Berryhaven
+Mushroomfield
+Lichenfield
+Daisyridge
+Dandelion City
+Puddle Cove
+Dewdrop Bay
+Seed Hollow
+Acornfield
+Twigland
+Stump Canyon
+]
+
+season = [
+autumn
+spring
+summer
+winter
+]
+
+festival = [
+<season> festival
+leaf party
+]
+
+bugname = [
+Miss Fernbug
+Fernie
+Berrydoop
+]
+
+smallnoun = [
+strawberry
+leaf
+acorn
+]
+
+largenoun = [
+redwood stump
+mossy boulder
+puddle
+]
+
+tomorrow = [
+tomorrow
+next week
+on Monday
+tonight
+today
+later
+soon
+on Tuesday
+this weekend
+]
+
+species = [
+katydid
+beetle
+ladybug
+leafhopper
+ant
+pillbug
+butterfly
+dragonfly
+grasshopper
+junebug
+worm
+]
+
+color = [
+ salmon pink
+ powder grey
+ cobalt
+ chartreuse
+ indigo
+ firebrick red
+ misty blue
+ electric purple
+ a purple as deep as your heart
+ flecked with stars
+ misty
+ gold
+ significant
+ dandelion yellow
+ banana yellow
+ still
+]
+
+sportsteam = [
+<town.titlecase> Wigglers
+<town.titlecase> Crawlers
+Hoppers of <town.titlecase>
+<town.titlecase> Manylegs
+Slimers
+Segmented Sizzlers
+Very Brave <species.s.titlecase> of <town.titlecase>
+<smallnoun.titlecase> Munchers
+]
+
+championship = [
+World Championship
+<smallnoun.titlecase> Cup
+<town.titlecase> Derby
+<smallnoun.titlecase> World Series
+<smallnoun> eating contest
+hiding under a <largenoun> competition
+<smallnoun> race
+<largenoun.titlecase> Marathon
+]
